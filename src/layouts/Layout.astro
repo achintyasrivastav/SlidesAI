@@ -1,0 +1,54 @@
+---
+import '../styles/main.css'
+import LoadingLayout from '../components/PageLoading.jsx';
+import Logo from '../components/Logo.jsx';
+import Workspace from '../components/Workspace.jsx';
+import Checkout from '../components/Checkout.jsx';
+import Main from '../components/Main.jsx';
+import Prices from '../components/Prices.jsx';
+import Testimonials from '../components/Testimonials.jsx';
+import FAQ from '../components/Faq.jsx';
+import Access from '../components/Access.jsx';
+import Effect from '../components/Effect.jsx';
+import Footer from '../components/Footer.jsx';
+import End from '../components/End.jsx';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body class="min-h-screen">
+
+		<LoadingLayout client:load />
+		
+		
+			
+			<Logo client:load/>
+			<Workspace client:load />
+			<Checkout client:load/>
+			<Main client:load />
+			<Prices/>
+			<Testimonials client:load/>
+			<FAQ client:load/>
+			<Access client:load/>
+			<Effect client:load/>
+			<Footer client:load/>
+			<End client:load/>
+
+		</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
